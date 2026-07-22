@@ -115,23 +115,6 @@ export default function HeroSection() {
                     <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Live execution stats</p>
                   </div>
                 </div>
-
-                <div
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '4px',
-                    padding: '4px 10px',
-                    borderRadius: 'var(--radius-full)',
-                    background: 'rgba(245, 158, 11, 0.15)',
-                    color: 'var(--accent-amber)',
-                    fontSize: '0.8rem',
-                    fontWeight: 600,
-                  }}
-                >
-                  <Star size={14} fill="currentColor" />
-                  <span>5.0 Rated</span>
-                </div>
               </div>
 
               {/* Code snippet / Architecture preview */}

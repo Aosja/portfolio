@@ -122,7 +122,7 @@ export default function Footer() {
           style={{
             paddingTop: '24px',
             display: 'flex',
-            justifyContent: 'space-between',
+            justifyContent: 'flex-end',
             alignItems: 'center',
             flexWrap: 'wrap',
             gap: '16px',
@@ -130,9 +130,6 @@ export default function Footer() {
             color: 'var(--text-muted)',
           }}
         >
-          <div>
-            © {new Date().getFullYear()} Muhammad Aosja. All rights reserved.
-          </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
             Crafted with precision & <Heart size={14} fill="var(--accent-emerald)" color="var(--accent-emerald)" />
           </div>
