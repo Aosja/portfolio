@@ -1,14 +1,7 @@
 import React from 'react';
-import { ArrowRight, Code, Zap, Bot, ShieldCheck, Sparkles, CheckCircle2, Star } from 'lucide-react';
+import { ArrowRight, Zap, Bot, Sparkles, CheckCircle2, Star } from 'lucide-react';
 
 export default function HeroSection() {
-  const metrics = [
-    { label: 'Projects Delivered', value: '35+' },
-    { label: 'Client Satisfaction', value: '99.8%' },
-    { label: 'Speed Optimization', value: 'Sub-100ms' },
-    { label: 'AI Models Deployed', value: '15+' },
-  ];
-
   return (
     <section
       id="home"
@@ -69,7 +62,6 @@ export default function HeroSection() {
                 display: 'flex',
                 flexWrap: 'wrap',
                 gap: '16px',
-                marginBottom: '48px',
               }}
             >
               <a href="#projects" className="btn btn-primary btn-glow">
@@ -81,43 +73,6 @@ export default function HeroSection() {
                 <Zap size={18} style={{ color: 'var(--accent-amber)' }} />
                 <span>Estimate Project Cost</span>
               </a>
-            </div>
-
-            {/* Metric counters grid */}
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(4, 1fr)',
-                gap: '16px',
-                paddingTop: '24px',
-                borderTop: '1px solid var(--border-light)',
-              }}
-              className="hero-metrics"
-            >
-              {metrics.map((m, idx) => (
-                <div key={idx}>
-                  <div
-                    style={{
-                      fontFamily: 'var(--font-heading)',
-                      fontSize: '1.65rem',
-                      fontWeight: 800,
-                      color: 'var(--text-primary)',
-                      marginBottom: '4px',
-                    }}
-                  >
-                    {m.value}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: '0.8rem',
-                      color: 'var(--text-muted)',
-                      fontWeight: 500,
-                    }}
-                  >
-                    {m.label}
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
 
@@ -239,7 +194,6 @@ export default function HeroSection() {
       <style>{`
         @media (max-width: 960px) {
           .hero-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
-          .hero-metrics { grid-template-columns: repeat(2, 1fr) !important; gap: 20px !important; }
         }
       `}</style>
     </section>
