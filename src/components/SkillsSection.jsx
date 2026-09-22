@@ -15,35 +15,35 @@ export default function SkillsSection() {
 
   const skillItems = [
     // ML & AI
-    { name: 'TensorFlow & Keras', category: 'ml', level: '92%', badge: 'Expert' },
-    { name: 'LangChain & RAG', category: 'ml', level: '95%', badge: 'Advanced' },
-    { name: 'Scikit-learn', category: 'ml', level: '88%', badge: 'Proficient' },
-    { name: 'CNNs & LSTMs', category: 'ml', level: '90%', badge: 'Advanced' },
+    { name: 'TensorFlow & Keras', category: 'ml', focus: 'Model Training & CNNs', badge: 'Deep Learning' },
+    { name: 'LangChain & RAG', category: 'ml', focus: 'Vector Search & LLM Routing', badge: 'AI Agents' },
+    { name: 'Scikit-learn', category: 'ml', focus: 'Classification & Pipelines', badge: 'ML Toolkit' },
+    { name: 'CNNs & Neural Nets', category: 'ml', focus: 'Aerial & Visual Recognition', badge: 'Architecture' },
     
     // Computer Vision
-    { name: 'YOLO (v8/v10)', category: 'cv', level: '94%', badge: 'Expert' },
-    { name: 'OpenCV', category: 'cv', level: '92%', badge: 'Expert' },
-    { name: 'Lucas-Kanade Optical Flow', category: 'cv', level: '88%', badge: 'Advanced' },
-    { name: 'Image Annotation & Augmentation', category: 'cv', level: '95%', badge: 'Expert' },
+    { name: 'YOLO (v8/v10)', category: 'cv', focus: 'Real-time Object Detection', badge: 'Vision' },
+    { name: 'OpenCV', category: 'cv', focus: 'Image Filtering & Tracking', badge: 'Core Vision' },
+    { name: 'Lucas-Kanade Optical Flow', category: 'cv', focus: 'Motion & Leak Detection', badge: 'Algorithms' },
+    { name: 'Annotation & Augmentation', category: 'cv', focus: 'Drone Training Datasets', badge: 'Data Prep' },
 
     // Web & Mobile
-    { name: 'React.js & Next.js', category: 'web', level: '96%', badge: 'Expert' },
-    { name: 'Swift & SwiftUI', category: 'web', level: '88%', badge: 'Advanced' },
-    { name: 'FastAPI & Python', category: 'web', level: '94%', badge: 'Expert' },
-    { name: 'NestJS & Node.js', category: 'web', level: '90%', badge: 'Advanced' },
-    { name: 'TypeScript & JavaScript', category: 'web', level: '95%', badge: 'Expert' },
+    { name: 'React.js & Next.js', category: 'web', focus: 'Interactive UI & SSR', badge: 'Primary Stack' },
+    { name: 'Swift & SwiftUI', category: 'web', focus: 'Native iOS Companion Apps', badge: 'Mobile' },
+    { name: 'FastAPI & Python', category: 'web', focus: 'High-Performance REST APIs', badge: 'Primary Backend' },
+    { name: 'NestJS & Node.js', category: 'web', focus: 'Modular Microservices', badge: 'Backend' },
+    { name: 'TypeScript & JavaScript', category: 'web', focus: 'Type-Safe Web Applications', badge: 'Core Languages' },
 
     // Data & Infra
-    { name: 'MySQL & Composite Indexing', category: 'data', level: '95%', badge: 'Sub-second' },
-    { name: 'Supabase Vector & PGVector', category: 'data', level: '92%', badge: 'Advanced' },
-    { name: 'Redis In-Memory Caching', category: 'data', level: '90%', badge: 'Advanced' },
-    { name: 'Pandas & NumPy Data Analytics', category: 'data', level: '94%', badge: 'Expert' },
+    { name: 'MySQL & Query Indexing', category: 'data', focus: 'Composite Indexes (19M+ Rows)', badge: 'Database' },
+    { name: 'Supabase & PGVector', category: 'data', focus: 'Vector Embeddings & Auth', badge: 'Vector DB' },
+    { name: 'Redis In-Memory Caching', category: 'data', focus: 'Query Caching & Speedups', badge: 'Caching' },
+    { name: 'Pandas & NumPy', category: 'data', focus: 'Time-Series Data Wrangling', badge: 'Data Analysis' },
 
     // Tools & DevOps
-    { name: 'n8n Workflow Automation', category: 'tools', level: '90%', badge: 'Automated' },
-    { name: 'Vercel & Cloud Deployments', category: 'tools', level: '95%', badge: 'Production' },
-    { name: 'Web Scraping Pipelines', category: 'tools', level: '92%', badge: 'Advanced' },
-    { name: '3D Blender Visualization', category: 'tools', level: '85%', badge: 'Modeling' }
+    { name: 'n8n Workflows', category: 'tools', focus: 'Automated Webhooks & Bots', badge: 'Automation' },
+    { name: 'Git & GitHub', category: 'tools', focus: 'Version Control & Code Reviews', badge: 'Dev Tools' },
+    { name: 'Web Scraping Pipelines', category: 'tools', focus: 'Scheduled Data Extraction', badge: 'Scraping' },
+    { name: 'Vercel & Cloud Deployments', category: 'tools', focus: 'Production Releases', badge: 'DevOps' }
   ];
 
   const filteredSkills = activeCategory === 'all'
@@ -54,10 +54,10 @@ export default function SkillsSection() {
     <section id="skills" style={{ position: 'relative', zIndex: 1 }}>
       <div className="section-container">
         <div className="section-header">
-          <div className="eyebrow">Technical Competencies</div>
-          <h2>Our Technology <span className="text-gradient">Stack</span>.</h2>
+          <div className="eyebrow">Skills & Stack</div>
+          <h2>Technologies I Work <span className="text-gradient">With</span>.</h2>
           <p>
-            Mastery over cutting-edge artificial intelligence frameworks, full-stack web architectures, and high-performance databases.
+            The programming languages, frameworks, and developer tools I use to build applications.
           </p>
         </div>
 
@@ -110,54 +110,33 @@ export default function SkillsSection() {
               key={idx}
               className="glass-card"
               style={{
-                padding: '24px',
+                padding: '22px 24px',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
+                gap: '14px',
               }}
             >
-              <div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                  <h4 style={{ fontSize: '1.05rem', fontWeight: 700 }}>{sk.name}</h4>
-                  <span
-                    style={{
-                      fontSize: '0.75rem',
-                      fontWeight: 600,
-                      padding: '3px 10px',
-                      borderRadius: 'var(--radius-full)',
-                      background: 'rgba(255, 255, 255, 0.06)',
-                      color: 'var(--accent-cyan)',
-                      border: '1px solid rgba(255, 255, 255, 0.1)',
-                    }}
-                  >
-                    {sk.badge}
-                  </span>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '6px' }}>
-                  <span>Proficiency</span>
-                  <span style={{ color: 'var(--accent-emerald)', fontWeight: 600 }}>{sk.level}</span>
-                </div>
-                <div
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <h4 style={{ fontSize: '1.02rem', fontWeight: 700 }}>{sk.name}</h4>
+                <span
                   style={{
-                    height: '6px',
-                    width: '100%',
-                    background: 'rgba(255, 255, 255, 0.08)',
+                    fontSize: '0.74rem',
+                    fontWeight: 600,
+                    padding: '3px 10px',
                     borderRadius: 'var(--radius-full)',
-                    overflow: 'hidden',
+                    background: 'rgba(255, 255, 255, 0.06)',
+                    color: 'var(--accent-cyan)',
+                    border: '1px solid rgba(255, 255, 255, 0.1)',
                   }}
                 >
-                  <div
-                    style={{
-                      height: '100%',
-                      width: sk.level,
-                      background: 'linear-gradient(90deg, var(--accent-emerald), var(--accent-cyan))',
-                      borderRadius: 'var(--radius-full)',
-                    }}
-                  />
-                </div>
+                  {sk.badge}
+                </span>
+              </div>
+
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.82rem', borderTop: '1px solid var(--border-light)', paddingTop: '10px' }}>
+                <span style={{ color: 'var(--text-muted)' }}>Focus</span>
+                <span style={{ color: 'var(--accent-emerald)', fontWeight: 500 }}>{sk.focus}</span>
               </div>
             </div>
           ))}

@@ -29,7 +29,7 @@ export default function HeroSection() {
           <div>
             <div className="eyebrow">
               <Sparkles size={16} />
-              <span>Muhammad Aosja · AI & Full Stack Studio</span>
+              <span>Muhammad Aosja · Software & AI Developer</span>
             </div>
 
             <h1
@@ -41,7 +41,7 @@ export default function HeroSection() {
                 marginBottom: '24px',
               }}
             >
-              Hi, I'm <span className="text-gradient">Muhammad Aosja</span>. Building High-Impact <span className="text-gradient-purple">AI & Web Products</span>.
+              Hi, I'm <span className="text-gradient">Muhammad Aosja</span>. I build practical <span className="text-gradient-purple">AI systems</span> and modern <span className="text-gradient">web apps</span>.
             </h1>
 
             <p
@@ -53,7 +53,7 @@ export default function HeroSection() {
                 maxWidth: '580px',
               }}
             >
-              Specializing in computer vision systems, RAG AI agents, full-stack web applications, and high-performance backend pipelines built to scale businesses.
+              Computer Science graduate and developer passionate about solving real problems — from drone computer vision and RAG chatbots to responsive full-stack applications and fast database systems.
             </p>
 
             {/* CTAs */}
@@ -65,7 +65,7 @@ export default function HeroSection() {
               }}
             >
               <a href="#projects" className="btn btn-primary btn-glow">
-                <span>View Featured Work</span>
+                <span>View My Work</span>
                 <ArrowRight size={18} />
               </a>
 
@@ -111,8 +111,8 @@ export default function HeroSection() {
                     <Bot size={24} />
                   </div>
                   <div>
-                    <h3 style={{ fontSize: '1.1rem', fontWeight: 700 }}>Muhammad Aosja Dev Environment</h3>
-                    <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Live execution stats</p>
+                    <h3 style={{ fontSize: '1.1rem', fontWeight: 700 }}>Developer Snapshot</h3>
+                    <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Core stack & active focus</p>
                   </div>
                 </div>
               </div>
@@ -136,32 +136,31 @@ export default function HeroSection() {
                   <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#ffbd2e' }} />
                   <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#27c93f' }} />
                 </div>
-                <div style={{ color: 'var(--accent-cyan)' }}>// Initializing Engineer Profile</div>
+                <div style={{ color: 'var(--accent-cyan)' }}>// About Me</div>
                 <div style={{ color: '#fff' }}>
-                  <span style={{ color: 'var(--accent-violet)' }}>const</span> engineer ={' '}
-                  <span style={{ color: 'var(--accent-emerald)' }}>'Muhammad Aosja'</span>;
-                </div>
-                <div style={{ color: 'var(--text-secondary)' }}>
-                  engineer.<span style={{ color: 'var(--accent-amber)' }}>deploySolution</span>({'{'}
+                  <span style={{ color: 'var(--accent-violet)' }}>const</span> developer = {'{'}
                 </div>
                 <div style={{ paddingLeft: '16px', color: 'var(--text-secondary)' }}>
-                  webStack: <span style={{ color: 'var(--accent-emerald)' }}>'Next.js 14 + Vite'</span>,
+                  name: <span style={{ color: 'var(--accent-emerald)' }}>'Muhammad Aosja'</span>,
                 </div>
                 <div style={{ paddingLeft: '16px', color: 'var(--text-secondary)' }}>
-                  aiLayer: <span style={{ color: 'var(--accent-emerald)' }}>'RAG + LangChain Agents'</span>,
+                  specialty: <span style={{ color: 'var(--accent-emerald)' }}>'Full Stack & Applied AI'</span>,
                 </div>
                 <div style={{ paddingLeft: '16px', color: 'var(--text-secondary)' }}>
-                  queryLatency: <span style={{ color: 'var(--accent-cyan)' }}>'0.012s'</span>
+                  recentMilestone: <span style={{ color: 'var(--accent-cyan)' }}>'Optimized 19M row queries (56s to 12ms)'</span>,
                 </div>
-                <div style={{ color: 'var(--text-secondary)' }}>{'}'});</div>
+                <div style={{ paddingLeft: '16px', color: 'var(--text-secondary)' }}>
+                  status: <span style={{ color: 'var(--accent-amber)' }}>'Open for freelance & full-time roles'</span>
+                </div>
+                <div style={{ color: '#fff' }}>{'}'};</div>
               </div>
 
               {/* Feature bullet badges */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 {[
-                  'Sub-second Database Query & Composite Indexing',
-                  'Retrieval-Augmented Generation (RAG) & LLM Automation',
-                  'Pixel-Perfect Responsive & Glassmorphic UI/UX',
+                  'Hands-on experience with 19M+ row database optimization',
+                  'Computer vision models trained for real-world drone imagery',
+                  'Fast, responsive React & FastAPI full-stack builds',
                 ].map((feature, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
                     <CheckCircle2 size={16} style={{ color: 'var(--accent-emerald)', flexShrink: 0 }} />

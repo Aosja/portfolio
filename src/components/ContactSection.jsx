@@ -33,9 +33,9 @@ export default function ContactSection() {
       <div className="section-container">
         <div className="section-header">
           <div className="eyebrow">Get In Touch</div>
-          <h2>Let's Build Something <span className="text-gradient">Extraordinary</span>.</h2>
+          <h2>Have a Project in Mind? <span className="text-gradient">Let's Talk</span>.</h2>
           <p>
-            Have a project in mind, need custom AI integration, or want to discuss a full-stack web application? We are ready to bring your vision to life.
+            Whether you need a web app built, want help implementing an AI feature, or want to explore collaboration, feel free to reach out directly.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export default function ContactSection() {
                   <Mail size={22} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Email Us Directly</div>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Email Directly</div>
                   <div style={{ fontSize: '0.98rem', fontWeight: 700, color: '#fff' }}>{emailAddress}</div>
                 </div>
               </div>
@@ -211,9 +211,9 @@ export default function ContactSection() {
                 >
                   <Check size={32} />
                 </div>
-                <h3 style={{ fontSize: '1.8rem', marginBottom: '12px' }}>Inquiry Received!</h3>
+                <h3 style={{ fontSize: '1.8rem', marginBottom: '12px' }}>Message Received!</h3>
                 <p style={{ color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '24px' }}>
-                  Thank you for reaching out. We will review your project requirements and respond within 24 hours.
+                  Thanks for reaching out! I've received your note and will get back to you shortly.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
@@ -224,9 +224,9 @@ export default function ContactSection() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '4px' }}>Send Us a Message</h3>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '4px' }}>Send Me a Message</h3>
                 <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '12px' }}>
-                  Fill out the form below to receive a detailed technical proposal and scope breakdown.
+                  Drop me a note with details on what you're building, and I'll get back to you with ideas.
                 </p>
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }} className="form-row">
@@ -291,9 +291,9 @@ export default function ContactSection() {
                       }}
                     >
                       <option value="Web Development">Full-Stack Web App</option>
-                      <option value="AI Integration">AI Agent & RAG Suite</option>
+                      <option value="AI Integration">AI Agent & RAG Solution</option>
                       <option value="Mobile App">Mobile App (SwiftUI/RN)</option>
-                      <option value="API Infrastructure">API & Backend Engineering</option>
+                      <option value="API Infrastructure">API & Backend Optimization</option>
                       <option value="Automation">Workflow Automation</option>
                     </select>
                   </div>
@@ -327,7 +327,7 @@ export default function ContactSection() {
                   <textarea
                     required
                     rows="4"
-                    placeholder="Tell us about your project goals, scope, and target launch date..."
+                    placeholder="Tell me about what you're building, key features, and your timeline..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     style={{
@@ -345,7 +345,7 @@ export default function ContactSection() {
                 </div>
 
                 <button type="submit" className="btn btn-primary btn-glow" style={{ padding: '14px', marginTop: '8px' }}>
-                  <span>Submit Project Inquiry</span>
+                  <span>Send Message</span>
                   <Send size={18} />
                 </button>
               </form>

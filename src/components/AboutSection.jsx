@@ -5,23 +5,23 @@ export default function AboutSection() {
   const pillars = [
     {
       icon: <Cpu size={24} />,
-      title: 'AI & Automation First',
-      description: 'Integrating LLM agents, RAG workflows, and custom computer vision pipelines directly into production products.'
+      title: 'Applied AI & Vision',
+      description: 'Building practical RAG workflows, document search, and custom CNN vision models that run reliably.'
     },
     {
       icon: <Rocket size={24} />,
-      title: 'Sub-Second Performance',
-      description: 'Engineered with composite indexing, Redis caching, and optimized frontend bundles for lightning-fast loads.'
+      title: 'Speed & Optimization',
+      description: 'Optimizing heavy database queries, caching frequent data with Redis, and keeping load times snappy.'
     },
     {
       icon: <Layers size={24} />,
-      title: 'Modern Architecture',
-      description: 'Modular React, Next.js, SwiftUI, NestJS, and FastAPI backends built to scale effortlessly with your userbase.'
+      title: 'Modern Full-Stack',
+      description: 'Building clean applications across React, Next.js, FastAPI, Node.js, and native mobile in SwiftUI.'
     },
     {
       icon: <Award size={24} />,
-      title: 'Production Precision',
-      description: 'Zero placeholder compromise. Rigorous testing, role-based access control, and complete deployment pipelines.'
+      title: 'Reliable Delivery',
+      description: 'Thoughtful architecture, role-based security, clean commits, and thorough testing before deployment.'
     }
   ];
 
@@ -29,10 +29,10 @@ export default function AboutSection() {
     <section id="about" style={{ position: 'relative', zIndex: 1 }}>
       <div className="section-container">
         <div className="section-header">
-          <div className="eyebrow">About Muhammad Aosja</div>
-          <h2>Where AI Innovation Meets <span className="text-gradient">Production Code</span>.</h2>
+          <div className="eyebrow">About Me</div>
+          <h2>Solving practical problems with <span className="text-gradient">clean code</span> and modern AI.</h2>
           <p>
-            Bridging the gap between complex artificial intelligence research and intuitive, high-converting digital products.
+            I enjoy building software that solves real headaches — from training computer vision models for drones to speeding up heavy database queries.
           </p>
         </div>
 
@@ -53,11 +53,11 @@ export default function AboutSection() {
             </h3>
             
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '20px', fontSize: '1.05rem' }}>
-              I'm <b>Muhammad Aosja</b>, an <b>Agentic AI & Full-Stack Engineer</b> passionate about the intersection of computer vision, mobile development, and scalable web architectures.
+              I'm <b>Muhammad Aosja</b>, a software developer with a degree in <b>Computer Science</b>. I focus on full-stack web engineering, backend optimization, and applied artificial intelligence.
             </p>
 
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '28px', fontSize: '1.05rem' }}>
-              My experience spans engineering live energy intelligence platforms handling 19M+ row datasets down to sub-second latencies, agricultural UAV drone vision systems, and autonomous RAG chatbots. I love turning bold ideas into products people use.
+              My projects range from training aerial computer vision models for drone agricultural monitoring to engineering an energy market analytics platform (OEDA) where composite indexing and Redis caching slashed 19M-row query times from 56 seconds down to 12 milliseconds. I enjoy writing clean, readable code and shipping tools that people genuinely find useful.
             </p>
 
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
@@ -95,7 +95,7 @@ export default function AboutSection() {
 
                 <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '10px', borderBottom: '1px solid var(--border-light)' }}>
                   <span style={{ color: 'var(--text-muted)' }}>Primary Role</span>
-                  <span style={{ color: 'var(--accent-emerald)', fontWeight: 700 }}>Agentic AI & Full Stack</span>
+                  <span style={{ color: 'var(--accent-emerald)', fontWeight: 700 }}>Full Stack & Applied AI</span>
                 </div>
 
                 <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '10px', borderBottom: '1px solid var(--border-light)' }}>
@@ -124,7 +124,7 @@ export default function AboutSection() {
             >
               <UserCheck size={28} style={{ color: 'var(--accent-emerald)', flexShrink: 0 }} />
               <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                Dedicated to writing clean, maintainable, and high-performance production code.
+                Focused on clean code, responsive interfaces, and shipping working software.
               </div>
             </div>
           </div>

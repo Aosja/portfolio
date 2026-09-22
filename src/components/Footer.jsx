@@ -61,7 +61,7 @@ export default function Footer() {
               </span>
             </div>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', maxWidth: '380px' }}>
-              Building high-performance digital products, AI systems, and responsive web applications engineered to scale.
+              Full-stack developer & AI engineer building clean, fast, and practical software solutions.
             </p>
           </div>
 

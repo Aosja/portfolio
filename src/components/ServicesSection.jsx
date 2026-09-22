@@ -7,44 +7,44 @@ export default function ServicesSection() {
     {
       icon: <Layout size={28} />,
       title: 'Web Application Development',
-      badge: 'Most Popular',
-      description: 'Custom, ultra-fast web apps built with React, Next.js, and modern CSS. Full SEO optimization, glassmorphic UI, and sub-second load speeds.',
-      features: ['Server-Side & Client Rendering', 'Responsive Layouts & Motion', 'State Management & APIs']
+      badge: 'Frontend & Full-Stack',
+      description: 'Responsive, modern web applications built with React, Next.js, and clean CSS. Focused on snappy load speeds, smooth interactions, and solid code structure.',
+      features: ['Client & Server-Side Rendering', 'Responsive Layouts & Motion', 'API Integration & State Management']
     },
     {
       icon: <Bot size={28} />,
-      title: 'AI & RAG Agent Integration',
-      badge: 'High Impact',
-      description: 'Empower your business with custom RAG chatbots, multi-model LLM integrations, document vectorization, and automated decision engines.',
-      features: ['Document Ingestion & Vector Embeddings', 'Multi-LLM Routing (Groq, OpenAI, Cohere)', 'Custom Context Isolation']
+      title: 'AI & RAG Solutions',
+      badge: 'Applied AI',
+      description: 'Custom AI setups for your documents and data, including RAG search pipelines, vector embeddings in PGVector, multi-LLM routing, and automated assistants.',
+      features: ['Document Ingestion (PDFs/Web)', 'Vector Search & PGVector', 'Custom Prompt Workflows']
     },
     {
       icon: <Smartphone size={28} />,
       title: 'Mobile App Development',
-      badge: 'Native & Cross',
-      description: 'Sleek, fluid iOS and Android mobile experiences engineered with SwiftUI and React Native for smooth animations and native hardware access.',
-      features: ['SwiftUI & Native iOS Controls', 'Offline Syncing & Push Alerts', 'Camera & Hardware Vision Integration']
+      badge: 'iOS & Native',
+      description: 'Clean mobile applications engineered with SwiftUI for native iOS or React Native for cross-platform apps, featuring smooth gestures and sensor integration.',
+      features: ['SwiftUI Native iOS Controls', 'Camera & Hardware Integrations', 'Offline Sync & Fast Storage']
     },
     {
       icon: <Server size={28} />,
-      title: 'High-Speed API & Backends',
-      badge: 'Infrastructure',
-      description: 'Robust RESTful and GraphQL backend architectures with Node.js, NestJS, and FastAPI paired with Redis caching and composite indexing.',
-      features: ['Database Indexing & Micro-services', 'Redis Caching & Queue Management', 'Role-Based JWT Security']
+      title: 'Fast APIs & Backend Services',
+      badge: 'Backend & Infra',
+      description: 'High-performance RESTful APIs built with FastAPI or Node.js. Database schema design, targeted indexing, Redis caching, and JWT authentication.',
+      features: ['Targeted Indexing & Performance Tuning', 'Redis Caching & Session Store', 'Role-Based Authentication (JWT)']
     },
     {
       icon: <Palette size={28} />,
-      title: 'UI/UX Design Systems',
-      badge: 'Design System',
-      description: 'Visually stunning design systems, interactive Figma wireframes, micro-interactions, dark/light modes, and modern responsive layouts.',
-      features: ['Interactive Prototype Previews', 'Custom Color Tokens & Icons', 'Accessibility & Usability First']
+      title: 'UI/UX & Frontend Polish',
+      badge: 'Interface Design',
+      description: 'Modern, aesthetic user interfaces with dark mode support, intuitive layouts, interactive component states, and responsive design across all devices.',
+      features: ['Modern Dark & Glass Aesthetics', 'Accessible Layouts & Navigation', 'Smooth Micro-Interactions']
     },
     {
       icon: <Workflow size={28} />,
-      title: 'Automation & Scraping Pipelines',
-      badge: 'Workflow',
-      description: 'Streamline business operations using n8n workflows, WhatsApp automation bots, PDF invoice generators, and web scraping pipelines.',
-      features: ['n8n & Webhook Integrations', 'Automated Scraping & Ingestion', 'PDF & Email Report Generators']
+      title: 'Automations & Web Scraping',
+      badge: 'Workflows',
+      description: 'Custom Python scripts and n8n workflows that automate repetitive tasks, monitor and scrape web data, and trigger instant WhatsApp or email alerts.',
+      features: ['n8n Webhook Automations', 'Scheduled Python Web Scrapers', 'Alerts & Report Generation']
     }
   ];
 
@@ -84,10 +84,10 @@ export default function ServicesSection() {
     <section id="services" style={{ position: 'relative', zIndex: 1 }}>
       <div className="section-container">
         <div className="section-header">
-          <div className="eyebrow">Our Core Offerings</div>
-          <h2>Specialized Engineering <span className="text-gradient">Services</span>.</h2>
+          <div className="eyebrow">Services & Capabilities</div>
+          <h2>How I Can Help <span className="text-gradient">Your Project</span>.</h2>
           <p>
-            From concept design to full production launch, we deliver end-to-end digital solutions tailored to your business needs.
+            Whether you need a full web application, custom AI integration, or assistance optimizing slow database queries, here are my core services.
           </p>
         </div>
 
@@ -159,11 +159,11 @@ export default function ServicesSection() {
           <div style={{ textAlign: 'center', maxWidth: '650px', margin: '0 auto 40px auto' }}>
             <div className="eyebrow" style={{ background: 'rgba(245, 158, 11, 0.1)', borderColor: 'rgba(245, 158, 11, 0.3)', color: 'var(--accent-amber)' }}>
               <Calculator size={16} />
-              <span>Interactive Estimator</span>
+              <span>Project Scope & Cost Calculator</span>
             </div>
-            <h3 style={{ fontSize: '2.2rem', marginBottom: '12px' }}>Project Cost & Timeline Estimator</h3>
+            <h3 style={{ fontSize: '2.2rem', marginBottom: '12px' }}>Ballpark Cost & Timeline Estimator</h3>
             <p style={{ color: 'var(--text-secondary)' }}>
-              Select your project parameters to get an instant estimated range for your solution.
+              Select your requirements to get an estimated range for planning your project.
             </p>
           </div>
 
@@ -308,7 +308,7 @@ export default function ServicesSection() {
                 className="btn btn-primary"
                 style={{ width: '100%', padding: '14px', fontSize: '0.95rem' }}
               >
-                <span>Book This Scope</span>
+                <span>Discuss This Scope</span>
                 <ArrowRight size={18} />
               </a>
             </div>

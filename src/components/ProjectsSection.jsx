@@ -18,15 +18,15 @@ export default function ProjectsSection() {
     {
       id: 'rag_chatbot',
       category: 'ai',
-      tag: 'AI · RAG Suite',
+      tag: 'AI · RAG Assistant',
       icon: <Bot size={24} />,
       title: 'Leo Agent RAG Chatbot Suite',
-      description: 'Multi-model AI support assistant with retrieval-augmented generation, per-user data isolation, document/URL ingestion, and Supabase auth with 10 free LLMs.',
-      fullDescription: 'Leo Agent is an enterprise-grade retrieval-augmented generation engine built with LangChain, Next.js, and FastAPI. It supports instant PDF, TXT, and web URL vector ingestion into Supabase PGVector, allowing users to query custom knowledge bases with sub-second context retrieval across 10 free LLMs (Groq, Llama-3, Cohere, Mistral, and Google Gemini).',
+      description: 'A multi-model RAG assistant that indexes user documents (PDFs, URLs, text) into Supabase PGVector and queries them using fast free LLMs via Groq and Gemini.',
+      fullDescription: 'I built Leo Agent to make document-based question answering simple and fast. Users can upload PDFs, text files, or URLs; the app chunks the text, computes vector embeddings, and stores them in Supabase PGVector with isolated user workspaces. It routes queries through 10 free and high-speed LLMs (Groq Llama-3, Mistral, and Google Gemini) so users get accurate answers with cited source context.',
       highlights: [
-        { label: 'Supported Models', value: '10 LLMs Integrated' },
+        { label: 'Supported Models', value: '10 Fast LLMs' },
         { label: 'Vector Index', value: 'Supabase PGVector' },
-        { label: 'Security', value: 'Per-User Context Isolation' }
+        { label: 'Data Security', value: 'Per-User Context Isolation' }
       ],
       tech: ['Next.js', 'FastAPI', 'LangChain', 'Supabase', 'PGVector', 'Embeddings']
     },
@@ -36,72 +36,72 @@ export default function ProjectsSection() {
       tag: 'FYP · Computer Vision',
       icon: <Eye size={24} />,
       title: 'AI UAV Agriculture & Drone Vision',
-      description: 'Final year research project: computer vision models for pest detection, water stress analysis & water theft detection from UAV aerial imagery using Lucas-Kanade optical flow.',
-      fullDescription: 'An end-to-end aerial computer vision solution engineered for autonomous UAV agricultural monitoring. Uses custom CNN architectures trained on high-resolution drone multispectral imagery to detect crop pest infestations, pinpoint irrigation water leakage, and calculate soil moisture stress index with an intuitive iOS SwiftUI client interface.',
+      description: 'Final Year University Project: trained computer vision models on aerial drone footage to spot crop pest infestations, detect irrigation leaks, and calculate water stress index.',
+      fullDescription: 'Developed for my university Final Year Project, this aerial monitoring system helps identify crop health problems early. I trained CNN models on high-resolution drone imagery alongside Lucas-Kanade optical flow algorithms to detect pest infestations and irrigation pipe leaks. I also developed a native iOS companion app in SwiftUI so field scouts can view detection overlays in real time.',
       highlights: [
-        { label: 'Computer Vision', value: 'CNN + Optical Flow' },
-        { label: 'Mobile Client', value: 'SwiftUI Native iOS' },
-        { label: 'Detection Accuracy', value: '98.4% Precision' }
+        { label: 'Vision Model', value: 'CNN + Optical Flow' },
+        { label: 'Mobile Client', value: 'Native iOS (SwiftUI)' },
+        { label: 'Dataset', value: 'Multispectral Aerial' }
       ],
       tech: ['TensorFlow', 'OpenCV', 'CNN', 'SwiftUI', 'Python', 'Lucas-Kanade']
     },
     {
       id: 'energy_oeda',
       category: 'fullstack',
-      tag: 'Full-Stack · Intelligence',
+      tag: 'Full-Stack · Analytics',
       icon: <Zap size={24} />,
-      title: 'Energy AI Intelligence Platform (OEDA)',
-      description: '12-page energy market analytics platform serving live European spot, gas & merit order analytics over 19M row time series tables with Redis caching.',
-      fullDescription: 'OEDA is an enterprise energy intelligence platform built for real-time European spot market visualization. It handles over 19,000,000 time series rows in MySQL, utilizing advanced composite indexing and Redis in-memory caching to slash complex analytics query latencies from 56 seconds down to 0.012 seconds.',
+      title: 'Energy Market Analytics Platform (OEDA)',
+      description: 'A 12-page energy analytics platform displaying live European power and gas pricing across 19M+ time-series records, optimized using composite indexing and Redis caching.',
+      fullDescription: 'OEDA tracks European electricity spot prices, gas trends, and merit order dispatch. The primary technical challenge was query speed across 19 million time-series rows. By redesigning database schemas, adding targeted composite indexes, and implementing a Redis caching layer, I reduced complex analytics query times from 56 seconds down to 12 milliseconds.',
       highlights: [
-        { label: 'Query Optimization', value: '56s ➔ 0.012s' },
-        { label: 'Dataset Volume', value: '19M+ Rows' },
-        { label: 'Platform Scope', value: '12 Live Analytics Pages' }
+        { label: 'Query Latency', value: '56s ➔ 12ms' },
+        { label: 'Dataset Size', value: '19M+ Rows' },
+        { label: 'Architecture', value: '12 Analytics Dashboards' }
       ],
       tech: ['Next.js', 'TypeScript', 'FastAPI', 'MySQL', 'Redis', 'ECharts']
     },
     {
       id: 'warehouse_wms',
       category: 'fullstack',
-      tag: 'Full-Stack · Enterprise',
+      tag: 'Full-Stack · Web App',
       icon: <Package size={24} />,
       title: 'Enterprise Warehouse Management System',
-      description: 'Full stack cargo tracking & inventory management with role-based access control (Admin / Staff / Customer), intake workflow, and PDF report generator.',
-      fullDescription: 'A complete inventory logistics solution streamlining cargo intake, package tracking, and stock movement. Features multi-role JWT security, automated PDF delivery note generation, and real-time status notifications for warehouse staff and clients.',
+      description: 'A full-stack logistics and inventory tracking system featuring role-based access control (Admin, Staff, Customer), package status pipelines, and automated PDF delivery notes.',
+      fullDescription: 'A practical inventory system built to streamline warehouse operations. Features include package intake tracking, barcode-ready status updates, JWT role-based security, and automated PDF delivery notes and invoices generated server-side using Node.js and PDFKit.',
       highlights: [
-        { label: 'Role Access', value: 'Admin / Staff / Client' },
-        { label: 'Document Engine', value: 'PDF Auto-Generation' },
-        { label: 'Tech Stack', value: 'Node.js + React' }
+        { label: 'Role Access', value: 'Admin, Staff, Customer' },
+        { label: 'Document Export', value: 'Server-side PDF Notes' },
+        { label: 'Authentication', value: 'JWT Security' }
       ],
       tech: ['React.js', 'Node.js', 'Express', 'MySQL', 'JWT', 'PDFkit']
     },
     {
       id: 'whatsapp_automation',
       category: 'automation',
-      tag: 'Automation · Scraping',
+      tag: 'Automation · Bot',
       icon: <Layers size={24} />,
       title: 'WhatsApp Automation & Web Scraper Bot',
-      description: 'Automated customer messaging & workflow bot built with n8n and Python, integrated with web-scraping pipelines and a React + NestJS dashboard.',
-      fullDescription: 'Automated messaging engine connecting n8n workflow triggers with Python scraping bots to extract market prices, process client leads, and broadcast immediate WhatsApp alerts to sales teams with high deliverability.',
+      description: 'An automated price monitor and lead workflow bot that scrapes market data on schedule and sends real-time WhatsApp alerts to team members using n8n and Python.',
+      fullDescription: 'A background automation workflow connecting Python web scrapers with n8n triggers. It monitors target web pages for price and inventory changes, processes incoming leads, and broadcasts instant alert notifications directly to WhatsApp channels, monitored via a React and NestJS dashboard.',
       highlights: [
-        { label: 'Workflow Engine', value: 'n8n Webhooks' },
-        { label: 'Messaging API', value: 'WhatsApp Integration' },
-        { label: 'Dashboard', value: 'React + NestJS' }
+        { label: 'Automation Tool', value: 'n8n Webhooks' },
+        { label: 'Alert Channel', value: 'WhatsApp API' },
+        { label: 'Control Panel', value: 'React + NestJS' }
       ],
       tech: ['n8n', 'Python', 'NestJS', 'Supabase', 'Web Scraping']
     },
     {
       id: 'csharp_chat',
       category: 'automation',
-      tag: 'Systems · Real-Time',
+      tag: 'Systems · Networking',
       icon: <MessageSquare size={24} />,
       title: 'C# Socket Client-Server & OS Tracker',
-      description: 'Real-time multi-threaded chat application with TCP sockets, plus an OS algorithms tracker visualizing CPU process scheduling in Java.',
-      fullDescription: 'Low-level systems architecture demonstrating asynchronous TCP socket communication across multiple concurrent desktop clients, paired with a visual CPU scheduling simulation tool (FCFS, SJF, Round-Robin).',
+      description: 'A real-time multi-threaded desktop chat app built with C# TCP sockets, alongside an interactive Java desktop visualizer for CPU scheduling algorithms.',
+      fullDescription: 'Built to explore low-level systems programming and networking: the chat system handles concurrent desktop clients with asynchronous TCP sockets in C#; the Java simulation visualizes OS scheduling algorithms (FCFS, SJF, and Round Robin) with dynamic Gantt charts.',
       highlights: [
-        { label: 'Networking', value: 'Asynchronous TCP Sockets' },
-        { label: 'Visualizer', value: 'Java CPU Scheduling' },
-        { label: 'UI Framework', value: 'WinForms & Swing' }
+        { label: 'Protocol', value: 'Async TCP Sockets' },
+        { label: 'Visualizer', value: 'CPU Scheduling in Java' },
+        { label: 'Client UI', value: 'WinForms & Swing' }
       ],
       tech: ['C#', 'Java', 'Sockets', 'WinForms', 'Multi-Threading']
     }
@@ -115,10 +115,10 @@ export default function ProjectsSection() {
     <section id="projects" style={{ position: 'relative', zIndex: 1 }}>
       <div className="section-container">
         <div className="section-header">
-          <div className="eyebrow">Portfolio Showcase</div>
-          <h2>Featured Case <span className="text-gradient">Studies</span>.</h2>
+          <div className="eyebrow">My Work</div>
+          <h2>Recent <span className="text-gradient">Projects</span>.</h2>
           <p>
-            Explore our real-world digital products, AI implementations, and enterprise software systems.
+            A selection of real systems and applications I've built — from machine learning pipelines to complete web platforms.
           </p>
         </div>
 
@@ -246,7 +246,7 @@ export default function ProjectsSection() {
                     color: 'var(--accent-emerald)',
                   }}
                 >
-                  <span>Interactive Live View</span>
+                  <span>View Details & Demo</span>
                   <ArrowRight size={16} />
                 </div>
               </div>

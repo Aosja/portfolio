@@ -25,10 +25,10 @@ export default function ProjectModal({ project, onClose }) {
     setIsSimulating(true);
 
     setTimeout(() => {
-      let response = `Retrieved matching vector chunk [0.94 cosine similarity] for "${query}". Processing via Groq Llama-3-70b: Done.`;
+      let response = `Found relevant context in indexed documents for: "${query}". Generated answer using Llama 3 via Groq with cited sources.`;
       setChatMessages(prev => [...prev, { sender: 'bot', text: response }]);
       setIsSimulating(false);
-    }, 900);
+    }, 800);
   };
 
   return (
@@ -98,7 +98,7 @@ export default function ProjectModal({ project, onClose }) {
           >
             {project.tag}
           </span>
-          <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Detailed Project Architecture</span>
+          <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Project Architecture & Notes</span>
         </div>
 
         <h2 style={{ fontSize: '2.2rem', marginBottom: '16px' }}>{project.title}</h2>
@@ -141,9 +141,9 @@ export default function ProjectModal({ project, onClose }) {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', borderBottom: '1px solid var(--border-light)', paddingBottom: '12px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--accent-emerald)', fontWeight: 600 }}>
               <Sparkles size={16} />
-              <span>Interactive Live Demo Simulator</span>
+              <span>Interactive Feature Preview</span>
             </div>
-            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Status: Active Sandbox</span>
+            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Interactive Demo</span>
           </div>
 
           {/* RAG Chatbot Simulator */}
@@ -246,7 +246,7 @@ export default function ProjectModal({ project, onClose }) {
                       Target Mode: <span style={{ color: 'var(--accent-cyan)' }}>{visionMode.toUpperCase()}</span>
                     </div>
                     <div style={{ fontSize: '0.8rem', color: 'var(--accent-amber)' }}>
-                      Optical Flow Confidence Score: 98.4% | Bounding Boxes Calculated
+                      Model analysis complete: bounding overlays & stress index computed.
                     </div>
                   </>
                 )}
@@ -259,7 +259,7 @@ export default function ProjectModal({ project, onClose }) {
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px', fontSize: '0.85rem' }}>
                 <span style={{ color: 'var(--text-muted)' }}>Query Latency Benchmark (19M Rows)</span>
-                <span style={{ color: 'var(--accent-emerald)', fontWeight: 700 }}>0.012 Seconds</span>
+                <span style={{ color: 'var(--accent-emerald)', fontWeight: 700 }}>12 Milliseconds</span>
               </div>
               <div style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-light)' }}>
                 <div style={{ display: 'flex', alignItems: 'flex-end', gap: '8px', height: '100px' }}>
@@ -286,8 +286,8 @@ export default function ProjectModal({ project, onClose }) {
           {!['rag_chatbot', 'drone_vision', 'energy_oeda'].includes(project.id) && (
             <div style={{ textAlign: 'center', padding: '20px 0' }}>
               <BarChart2 size={32} style={{ color: 'var(--accent-cyan)', marginBottom: '8px' }} />
-              <div style={{ fontSize: '0.9rem', color: '#fff', fontWeight: 600 }}>Role-Based Auth & Real-Time Sync Ready</div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Tested with enterprise load and high concurrency.</div>
+              <div style={{ fontSize: '0.9rem', color: '#fff', fontWeight: 600 }}>Role-Based Access & Reliable State Sync</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Tested for high reliability and concurrent requests.</div>
             </div>
           )}
         </div>
@@ -320,7 +320,7 @@ export default function ProjectModal({ project, onClose }) {
             Close View
           </button>
           <a href="#contact" onClick={onClose} className="btn btn-primary">
-            <span>Inquire About Similar Project</span>
+            <span>Discuss a Similar Project</span>
             <ExternalLink size={16} />
           </a>
         </div>
